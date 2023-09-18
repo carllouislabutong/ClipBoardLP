@@ -1,0 +1,335 @@
+
+  /* PRIMARY COLORS */
+  $Strong-Cyan: hsl(171, 66%, 44%)
+  $Light-Blue: hsl(233, 100%, 69%)
+
+  /* NEUTRAL */
+  $Dark-Grayish-Blue: hsl(210, 10%, 33%)
+  $Grayish-Blue: hsl(201, 11%, 90%)
+
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 600px) 
+    .button1 , .button2
+        flex-grow: 1
+    .headerLogo
+        left: 38% !important
+    span
+        display: inline !important
+    .fifth-button-one , .fifth-button-two
+        flex-grow: 1
+    .footer-socmed
+        margin-top: 3rem
+    .footer-logo
+        text-align: center
+    .footer-navigation
+        justify-content: center
+        text-align: center
+    .footer-nav-one,
+    .footer-nav-two,
+    .footer-nav-three
+        margin-left: 3rem
+    
+
+@media screen and (max-width: 1200px) 
+    .second-section-flex
+        justify-content: center
+        text-align: center
+        transform: translateX(45px)
+    .list-company
+        flex-direction: column
+        align-items: center
+
+         
+            
+body
+     overflow-x: hidden 
+
+img 
+  min-height: 300px
+  width: 100%
+
+#computer-pic
+    object-fit: contain
+
+.header 
+  position: relative
+
+.headerLogo 
+  position: absolute
+  left: 45%
+  bottom: 70px
+
+span 
+    display: block
+
+
+    //FIRST SECTION///////////////////////////////////////////////
+
+.first-section
+    overflow-x: hidden 
+    text-align: center
+    max-width: 800px
+    width: 90%
+    margin: 0 auto
+
+    h1
+        font-size: 2.2rem
+    p
+        opacity: .4
+        font-weight: 600
+        margin-top: 1rem
+
+.first-section  .first-section-buttons
+    margin-top: 3rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 1.2rem
+
+    .button1
+        border-radius: 1.5rem
+        padding: .5rem 2rem
+        font-size: .9rem
+        font-weight: 600
+        color: white
+        border: none
+        background-color: $Strong-Cyan
+        transition: .3s ease-in
+        
+    .button1:hover
+        box-shadow: 1px 1px 1px 1px $Dark-Grayish-Blue
+        transform: translateY(-5px)
+    
+        
+    .button2
+        border-radius: 1.5rem
+        padding: .5rem 1.7rem
+        font-size: .9rem
+        font-weight: 600
+        color: white
+        border: none
+        background-color: $Light-Blue
+        transition: .3s ease-in
+
+    .button2:hover
+        box-shadow: 1px 1px 1px 1px $Dark-Grayish-Blue
+        transform: translateY(-5px)  
+
+.first-section .first-section-second-info
+    margin-top: 9rem
+
+    h1
+        font-size: 1.8rem  
+    p
+        font-size: .9rem
+
+
+    // SECOND SECTION////////////////////////////////////////////////////////////////////
+
+.second-section .second-section-flex
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 9rem
+.second-section
+    margin-top: 6.5rem
+    width: 90%
+    transform: translateX(-30px)
+    // position: absolute
+    // left: -30px
+
+    p
+        opacity: .4
+        font-weight: 600
+        font-size: .8rem
+        margin-top: .7rem
+
+.second-section-MT
+    margin-top: 3rem   
+        
+
+
+    // THIRD SECTION
+.third-section
+    // margin-top: 8rem
+    text-align: center
+    width: 90%
+    // top | left and right | bottom
+    margin: 8rem auto 0  
+
+    .third-section-pic
+        margin: 3rem auto 0  
+        max-width: 800px
+
+.third-section .third-section-header
+    text-align: center
+
+    p
+        opacity: .5
+        font-weight: 600
+        font-size: .9rem
+
+    h1
+        margin-bottom: 1.5rem
+        font-size: 1.8rem
+        opacity: .9
+.third-section-footer
+    margin-top: 2.5rem
+
+    h1
+        font-size: 1.8rem
+        margin-bottom: 1.5rem
+        opacity: .9
+    p
+        opacity: .5
+        font-weight: 600
+        font-size: .9rem
+
+// Fourth Sectiob /////////////////////////////////////////// 
+.fourth-section .list-canDo
+    display: flex
+    justify-content: center
+    gap: 3rem
+    text-align: center
+    // margin-top: 6rem
+    flex-wrap: wrap
+    width:  95%
+    margin: 5rem auto 0 
+
+
+    h1
+        opacity: .9
+        margin-top: 1.5rem
+    p
+        opacity: .5
+        font-weight: 600 
+        font-size: 1rem
+        margin-top: 1rem
+.list-company
+    display: flex
+    justify-content: center
+    // align-items: center
+    // flex-direction: column
+    column-gap: 4rem
+    width: 10%
+    // height: 10%
+    // padding: 100%
+    margin: 3rem auto 0 
+    // flex-wrap: wrap
+    
+    
+    .CompanyLogo 
+        // aspect-ratio: 1/1
+        // background-size: cover
+        height: 9rem
+        width: 10rem
+        object-fit: contain
+    .company-logo-pic
+        width: 95%
+        height: 12rem
+        width: 12rem
+        // background-repeat: no-repeat
+        
+// FIFTH SECTION /////////////////////////////
+.fifth-section 
+    text-align: center
+    margin: 7rem auto 11rem 
+    width: 90%
+
+    h1
+        font-size: 1.7rem
+    p
+        padding: 2rem 0
+        font-weight: 600
+        opacity: .6 
+    
+    .fifth-section-button
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 1.2rem
+
+        .fifth-button-one
+            border-radius: 2rem
+            border: none
+            background: $Strong-Cyan
+            font-weight: 600
+            padding: .5rem 2rem
+            font-size: .9rem
+            color: white
+            transition: .3s ease-out
+        .fifth-button-one:hover
+            transform: translateY(-2px)
+            box-shadow: 1px 1px 1px 1px $Dark-Grayish-Blue
+        .fifth-button-two
+            border-radius: 2rem
+            border: none
+            background: $Light-Blue
+            font-weight: 600
+            padding: .5rem 2rem
+            font-size: .9rem
+            color: white
+            transition: .3s ease-out
+        .fifth-button-two:hover
+
+            transform: translateY(-2px)
+            box-shadow: 1px 1px 1px 1px $Dark-Grayish-Blue
+        
+// FOOTER //////////////////////////////////////////////////
+footer
+    background-color: $Grayish-Blue
+    padding: 2rem 0
+.footer-navigation
+    display: flex
+    flex-wrap: wrap
+    
+    
+    .footer-nav-one,
+    .footer-nav-two,
+    .footer-nav-three
+        margin-right: 3rem
+        p
+            margin: 1rem
+
+        a
+            text-decoration: none
+            color: black
+            opacity: .8
+            font-weight: 700
+        
+
+.footer-socmed
+    display: flex
+
+    .socmed-one,
+    .socmed-two,
+    .socmed-three
+        margin-right: 1.5rem
+.footer-info
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-items: center
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+
+    .footer-navigation
+        flex-grow: 4
+    .footer-logo
+        flex-grow: 1
+
+        svg
+            transform: scale(.6)
+
+
+    
+
+
+
+
+
+
+
